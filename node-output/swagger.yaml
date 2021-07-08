@@ -35,17 +35,20 @@ paths:
       
       
       
-  /admin/getcompany:
+  /admin/getcompany/{id}:
     get:
       tags:
         - Admin
-      summary: Retrieves the collection of User resources.aaaallll
+      parameters:
+        - name: id
+          in: path
+          required: true
+          type: integer
       responses:
         '200':
-          description: User collection response
+          description: Company response
           schema:
-            $ref: '#/definitions/User'
-      description: dsdád
+            $ref: '#/definitions/Company'
 definitions:
   User:
     required:
@@ -58,6 +61,56 @@ definitions:
         type: string
       username:
         type: string
+  Company:
+    properties:
+      id:
+        type: integer
+      name:
+        type: string
+      uen:
+        type: string
+      category:
+        type: string
+      created_at:
+        type: integer
+      updated_at:
+        type: integer
+      plan_id:
+        type: integer
+      description:
+        type: string
+      logo:
+        type: string
+      logo_size:
+        type: integer
+      logo_mime:
+        type: string
+      brand_name:
+        type: string
+      location:
+        type: string
+      industry:
+        type: string
+      banner_img:
+        type: string
+      banner_img_size:
+        type: integer
+      banner_img_mime:
+        type: string
+      store_display:
+        type: string
+      store_display_size:
+        type: integer
+      store_display_mime:
+        type: string
+      specialisation:
+        type: string
+      company_email:
+        type: string
+      featured:
+        type: integer
+      last_active:
+        type: integer
 tags:
   - name: Admin
   - name: User
