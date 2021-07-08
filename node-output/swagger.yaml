@@ -19,6 +19,33 @@ paths:
           schema:
             $ref: '#/definitions/User'
       description: dsdád
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  /admin/getcompany:
+    get:
+      tags:
+        - Admin
+      summary: Retrieves the collection of User resources.aaaallll
+      responses:
+        '200':
+          description: User collection response
+          schema:
+            $ref: '#/definitions/User'
+      description: dsdád
 definitions:
   User:
     required:
@@ -32,4 +59,5 @@ definitions:
       username:
         type: string
 tags:
-  - name: oke
+  - name: Admin
+  - name: User
