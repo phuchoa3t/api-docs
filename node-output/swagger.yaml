@@ -35,14 +35,3 @@ definitions:
         type: string
       username:
         type: string
-  Usere:
-    required:
-    - email
-    - username
-    properties:
-      id:
-        type: integer
-      email:
-        type: string
-      username:
-        type: string
