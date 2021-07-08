@@ -1,0 +1,60 @@
+---
+swagger: "2.0"
+info:
+  version: "1.0"
+  title: API
+basePath: /
+tags:
+- name: oke
+consumes:
+- application/x-www-form-urlencoded
+produces:
+- application/json
+paths:
+  /user:
+    get:
+      tags:
+      - User
+      summary: Retrieves the collection of User resources.
+      description: dsdád
+      parameters: []
+      responses:
+        "200":
+          description: User collection response
+          schema:
+            $ref: '#/definitions/User'
+  /user2:
+    get:
+      tags:
+      - User2
+      summary: Retrieves the collection of User resources.
+      description: dsdád
+      parameters: []
+      responses:
+        "200":
+          description: User collection response
+          schema:
+            $ref: '#/definitions/User'
+definitions:
+  User:
+    required:
+    - email
+    - username
+    properties:
+      id:
+        type: integer
+      email:
+        type: string
+      username:
+        type: string
+  Usere:
+    required:
+    - email
+    - username
+    properties:
+      id:
+        type: integer
+      email:
+        type: string
+      username:
+        type: string
