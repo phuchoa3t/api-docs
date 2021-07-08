@@ -12,7 +12,7 @@ paths:
     get:
       tags:
         - User
-      summary: Retrieves the collection of User resources.aaaa
+      summary: Retrieves the collection of User resources.aaaallll
       responses:
         '200':
           description: User collection response
